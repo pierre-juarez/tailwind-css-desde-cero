@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Grid with TailwindCSS</title>
+</head>
+<body class="container mx-auto text-center mt-5">
+  
+  <div class="grid grid-cols-3 gap-4 my-2">
+    <div class="bg-blue-400">A</div>
+    <div class="bg-blue-400">A</div>
+    <div class="bg-blue-400">A</div>
+    <div class="bg-blue-400">A</div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-2">
+    <div class="bg-green-400">A</div>
+    <div class="bg-green-400">A</div>
+    <div class="bg-green-400">A</div>
+    <div class="bg-green-400">A</div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-2">
+    <div class="bg-red-400 col-span-1 sm:col-span-2">B</div>
+    <div class="bg-red-400">A1</div>
+    <div class="bg-red-400">A2</div>
+    <div class="bg-red-400 col-span-1 sm:col-span-2">C</div>
+  </div>
+
+  <div class="grid grid-cols-4 gap-4 my-2">
+    <div class="bg-orange-400 col-start-4">B</div>
+    <div class="bg-orange-400 col-end-3">A</div>
+    <div class="bg-orange-400">A</div>
+    <div class="bg-orange-400">C</div>
+  </div>
+
+  <div class="grid grid-rows-4 gap-4 my-2">
+    <div class="bg-yellow-400 row-span-2">A</div>
+    <div class="bg-yellow-400">A</div>
+    <div class="bg-yellow-400">A</div>
+    <div class="bg-yellow-400">A</div>
+  </div>
+
+</body>
+</html>
